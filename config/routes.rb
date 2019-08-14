@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   end
 
   get '/*a', to: 'application#not_found'
-  
+  get '/', to: 'application#not_found'
 end
