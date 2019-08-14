@@ -178,7 +178,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   capistrano (~> 3.7, >= 3.7.1)
-  capistrano-passenger
+  capistrano-passenger (~> 0.2.0)
   capistrano-rails (~> 1.2)
   capistrano-rbenv (~> 2.1, >= 2.1.4)
   devise
