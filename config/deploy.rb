@@ -4,7 +4,7 @@ lock "~> 3.11.0"
 set :application, "fsfr"
 set :repo_url, "git@github.com:Mi3i4/fsfr_ror.git"
 
-set :deploy_to, "/home/develop/fsfr"
+set :deploy_to, "/home/develop/fsfr/ruby"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 append :linked_files, "config/master.key"
 
