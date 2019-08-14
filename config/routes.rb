@@ -8,4 +8,7 @@ Rails.application.routes.draw do
     resource :user, only: [:show, :update]
     get 'database', to: 'question#give_database' 
   end
+
+  get '/*a', to: 'application#not_found'
+  
 end
