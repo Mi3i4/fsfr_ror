@@ -9,4 +9,7 @@ Rails.application.routes.draw do
     get 'database', to: 'question#give_database' 
     get 'chapters', to: 'question#give_chapters'
   end
+
+  get '/*a', to: 'application#not_found'
+  get '/', to: 'application#not_found'
 end

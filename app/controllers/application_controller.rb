@@ -2,6 +2,10 @@ class ApplicationController < ActionController::API
   include ActionController::HttpAuthentication::Token::ControllerMethods
   #   protect_from_forgery with: :null_session
 
+  def not_found
+    render json: { errors: 'Not found action' }, status: :not_found
+  end
+
   respond_to :json
 
   #   before_action :underscore_params!

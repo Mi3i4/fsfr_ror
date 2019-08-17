@@ -4,14 +4,14 @@ lock "~> 3.11.0"
 set :application, "fsfr"
 set :repo_url, "git@github.com:Mi3i4/fsfr_ror.git"
 
+set :deploy_to, "/home/develop/fsfr/ruby"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
-append :linked_files, "config/master.key"
+# append :linked_files, "config/master.key"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/develop/fsfr"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -36,7 +36,7 @@ set :deploy_to, "/home/develop/fsfr"
 # set :local_user, -> { `git config user.name`.chomp }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 5
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
