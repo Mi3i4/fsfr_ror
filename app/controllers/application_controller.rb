@@ -23,7 +23,7 @@ class ApplicationController < ActionController::API
   end
 
   def current_user
-    pp "!!!!!!!!!!!!!!!!!!!!11"
+    # pp "!!!!!!!!!!!!!!!!!!!!11"
     @current_user ||= super || User.find(@current_user_id)
   end
 

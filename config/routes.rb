@@ -8,6 +8,11 @@ Rails.application.routes.draw do
     resource :user, only: [:show, :update]
     get 'database', to: 'question#give_database' 
     get 'chapters', to: 'question#give_chapters'
+    get 'question/:chapter_num', to: 'question#ten_question'
+    post 'answered', to: 'question#answered'
+    get 'statistics', to: 'question#statistics_reset'
+    get 'exam', to: 'question#exam'
+    get 'studying', to: 'question#studying'
   end
 
   get '/*a', to: 'application#not_found'

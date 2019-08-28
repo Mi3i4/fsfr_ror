@@ -1,0 +1,1 @@
+json.merge! @ten_question
