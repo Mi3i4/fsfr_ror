@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:Mi3i4/fsfr_ror.git"
 
 set :deploy_to, "/home/develop/fsfr/ruby"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
-# append :linked_files, "config/master.key"
+append :linked_files, ".env"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
